@@ -4,24 +4,10 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 public class teleportback : MonoBehaviour
 {
+	public string level;
 
-
-
-    public string level;
-    private void OnCollisionEnter(Collision collision)
-
-
-
-
-    {
-        SceneManager.LoadScene(level);
-        
-    }
-
-
-
-
+	private void OnTriggerEnter(Collider hit)
+	{
+		SceneManager.LoadScene(level);
+	}
 }
-        
-    
-
